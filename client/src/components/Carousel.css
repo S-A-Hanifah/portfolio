@@ -1,0 +1,35 @@
+.carousel-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90vw;
+  margin: 0 auto;
+  column-gap: 1vw;
+}
+
+.carousel-cont img {
+  width: 100%;
+  margin-bottom: 10vw;
+  border-radius: 2vw;
+  box-shadow: 0.1vw 0.1vw 0.5vw 0.1vw #401f13;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-grid {
+    margin-left: 0vw;
+  }
+  .carousel-cont img {
+    box-shadow: 0.1vw 0.1vw 0.5vw 0.1vw #401f13;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 96vw;
+    column-gap: 1vw;
+  }
+  .carousel-cont img {
+    width: 100%;
+    margin-bottom: unset;
+    border-radius: 1vw;
+  }
+}

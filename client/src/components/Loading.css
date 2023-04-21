@@ -1,0 +1,77 @@
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #f2f2f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.wait {
+  position: relative;
+  top: -2%;
+}
+.loading h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.progressBar {
+  border: 0.1rem solid #401f13;
+  width: 60vw;
+  height: 0.5rem;
+  position: relative;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+}
+
+.progressBar span {
+  background-color: #401f13;
+  width: 60vw;
+  height: 100%;
+  display: block;
+  position: relative;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+  top: -100%;
+  left: -2.5%;
+}
+
+.progressBar span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    100% 100%,
+    color-stop(0.25, rgba(242, 242, 240, 0.9)),
+    color-stop(0.25, transparent),
+    color-stop(0.5, transparent),
+    color-stop(0.5, rgba(242, 242, 240, 0.8)),
+    color-stop(0.75, rgba(242, 242, 240, 0.9)),
+    color-stop(0.75, transparent),
+    to(transparent)
+  );
+  background-size: 2.5rem 2.5rem;
+  animation: move 2s linear infinite;
+  border-radius: 25px;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}

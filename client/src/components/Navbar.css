@@ -1,0 +1,133 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  padding: 5vw;
+  z-index: 2;
+  background-color: #f2f2f2;
+  left: 0;
+  right: 0;
+  box-shadow: none;
+  transition: 0.15s box-shadow;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav {
+  background: linear-gradient(110deg, #401f13, #734124 90%);
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 40%;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: 0.15s transform;
+  z-index: 4;
+}
+.mobile-nav ul {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vw;
+  gap: 2vw;
+  margin-bottom: 5vh;
+}
+.mobile-nav .logo:first-of-type {
+  margin-top: 5vh;
+}
+.mobile-nav ul li {
+  color: #f2f2f2;
+  list-style: none;
+}
+.navbar .logo,
+.mobile-nav .logo,
+.closer-x .logo {
+  width: 12vw;
+}
+.nav-btn {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  padding: 6vw;
+  border-radius: 7vw 0 0 7vw;
+  z-index: 3;
+  background: linear-gradient(105deg, #401f13, #734124 90%);
+}
+.nav-btn .logo {
+  width: 9vw;
+}
+.closer-x {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.7;
+  background: linear-gradient(110deg, #401f13, #734124 90%);
+  display: none;
+  transition: 0.15s display;
+  z-index: 2;
+}
+.isShown {
+  display: block;
+}
+.isOpen {
+  transform: translateX(0%);
+}
+.navbar-active {
+  box-shadow: 0.1vw 0.1vw 1vw 0.8vw #401f13;
+}
+.ds-menu {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .nav-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    padding: 3vw;
+    padding-bottom: 2vw;
+    border-radius: 3vw 0 0 3vw;
+  }
+  .navbar .logo,
+  .mobile-nav .logo,
+  .closer-x .logo {
+    width: 5vw;
+  }
+  .navbar {
+    padding: 4vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 1.5vw 4vw;
+  }
+  .ds-menu {
+    display: flex;
+    width: 35vw;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    transform: translateX(10%);
+  }
+  .ds-menu li {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .ds-menu li:hover {
+    text-shadow: 0.1rem 0.1rem 0.1rem #401f13;
+  }
+  .navbar .logo-cont .logo {
+    width: 3vw;
+  }
+}

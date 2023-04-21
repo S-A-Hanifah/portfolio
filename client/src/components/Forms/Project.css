@@ -1,0 +1,111 @@
+.Project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-preview {
+  position: relative;
+  width: 70vw;
+  height: 45vw;
+  margin: 7.5vw auto;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  border-radius: 2vw;
+}
+.project-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(transparent 60%, #401f13);
+  border-radius: 4vw;
+}
+.project-window-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+.project-window-icons {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 3vw;
+  box-shadow: none;
+  transition: 0.15s box-shadow;
+  cursor: pointer;
+}
+.project-window-icons:hover {
+  box-shadow: 0.1vw 0.1vw 1vw 0.8vw #401f13;
+}
+.project-window-icons img {
+  width: 100%;
+  border-radius: 3vw;
+}
+.project-snippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 35vw;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 5vw;
+}
+.project-snippet h3 {
+  font-size: 7vw;
+  margin: 5vw 0;
+}
+.project-snippet p {
+  font-size: 4vw;
+}
+.project-window-buttons {
+  margin-top: 10vw;
+}
+@media screen and (min-width: 768px) {
+  .project-preview {
+    margin: 10vw auto;
+    margin-bottom: 0;
+  }
+  .project-window-buttons {
+    margin-top: 7vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project-preview {
+    width: 30vw;
+    height: 15vw;
+    border-radius: 1vw;
+    margin: 2vw auto;
+  }
+  .project-snippet h3 {
+    font-size: 7vw;
+    margin: 2vw 0;
+  }
+  .project-overlay {
+    border-radius: 1vw;
+  }
+  .project-window-icons {
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 1vw;
+  }
+  .project-window-icons img {
+    border-radius: 1vw;
+  }
+  .project-snippet h3 {
+    font-size: 2vw;
+  }
+  .project-snippet {
+    width: 85%;
+    height: 10vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    padding-left: 1vw;
+  }
+  .project-snippet p {
+    font-size: 1.5vw;
+  }
+  .project-window-buttons {
+    margin-top: 2.5vw;
+    gap: 2.5vw;
+  }
+}

@@ -1,0 +1,195 @@
+.Desc {
+  padding: 40vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+}
+.Desc h2 {
+  font-size: 15vw;
+  margin-bottom: 10vw;
+}
+.Desc h3,
+.feature-sect h3 {
+  font-size: 8vw;
+  margin-bottom: 8vw;
+}
+.Desc h4 {
+  font-size: 8vw;
+  margin-bottom: 8vw;
+}
+.Desc p {
+  font-size: 5vw;
+  margin-bottom: 10vw;
+}
+.stack {
+  margin-left: 5vw;
+}
+
+.stack ul li {
+  font-size: 7vw;
+  font-weight: 700;
+  margin-left: 15vw;
+  margin-bottom: 2vw;
+}
+.stack ul {
+  margin-bottom: 10vw;
+}
+.features-cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90vw;
+  margin: 0 auto;
+  column-gap: 1vw;
+  text-align: center;
+}
+.indi-feature img {
+  width: 100%;
+  border-radius: 1.5vw;
+}
+.features-cont h3 {
+  font-size: 8vw;
+  margin: 5vw 0;
+}
+.features-cont p {
+  font-size: 5vw;
+}
+.download-cont {
+  position: relative;
+}
+.download-cont a:nth-child(2) {
+  margin-left: 4vw;
+}
+.download-cont {
+  margin-left: 2vw;
+}
+
+@keyframes project-intro {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.show-project {
+  animation: project-intro 1s forwards;
+}
+
+.project-rise {
+  opacity: 1;
+  transform: translateY(0%);
+  text-shadow: none;
+  transition: 1s all;
+}
+.project-sink {
+  opacity: 0;
+  transform: translateY(10%);
+  text-shadow: 0.1rem 0.1rem 1rem #401f13;
+  transition: 1s all;
+}
+.hide-stack {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 0.5s all;
+}
+.show-stack {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 0.5s all;
+}
+
+@media screen and (min-width: 480px) {
+  .Desc h2 {
+    font-size: 10vw;
+  }
+  .Desc h3,
+  .feature-sect h3 {
+    font-size: 7vw;
+  }
+  .Desc h4 {
+    font-size: 7vw;
+  }
+  .Desc p {
+    font-size: 4vw;
+  }
+  .stack ul li {
+    font-size: 4vw;
+  }
+  .features-cont h3 {
+    font-size: 5vw;
+  }
+  .features-cont p {
+    font-size: 3vw;
+  }
+  .download-cont button {
+    font-size: 3vw;
+    padding: 1vw 2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Desc {
+    padding: 10vw 0;
+  }
+  .Desc h2 {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  }
+  .Desc h3,
+  .feature-sect h3 {
+    font-size: 3vw;
+    margin: 1vw 0;
+  }
+  .Desc h4 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+  .Desc p {
+    font-size: 1.5vw;
+    margin-bottom: 4vw;
+    margin-left: 1vw;
+  }
+  .stack ul li {
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-bottom: 0.5vw;
+  }
+  .features-cont {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    margin-bottom: 10vw;
+  }
+  .features-cont h3 {
+    font-size: 2vw;
+    margin: 0;
+    margin: 1vw 0;
+  }
+  .features-cont p {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .indi-feature img {
+    width: 100%;
+    border-radius: 1vw;
+  }
+  .download-cont a:nth-child(2) {
+    font-size: 1vw;
+    margin-left: 1vw;
+  }
+  .download-cont {
+    margin-left: 4vw;
+  }
+  .download-cont button {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .download-cont button {
+    padding: 0.5vw 1.5vw;
+  }
+}

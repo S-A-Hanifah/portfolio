@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  color: #734124;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #f2f2f2;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #401f13;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem #73412475;
+}
+button {
+  color: #f2f2f0;
+  background-color: #401f13;
+  background: #401f13;
+  font-size: 5vw;
+  padding: 2vw 4vw;
+  border-radius: 6vw;
+  cursor: pointer;
+  border-color: #734124;
+}
+.ds-only {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ds-only {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mob-only {
+    display: none;
+  }
+  button {
+    font-size: 0.8vw;
+    padding: 0.4vw 1vw;
+    border-radius: 2vw;
+  }
+}

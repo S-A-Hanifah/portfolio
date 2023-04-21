@@ -1,0 +1,53 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #401f13d8;
+  z-index: 5;
+}
+.modal {
+  position: fixed;
+  width: 80vw;
+  height: 130vw;
+  left: 10%;
+  top: 5%;
+  border-radius: 4vw;
+  background-color: #f2f2f2;
+  z-index: 5;
+}
+.closer-modal {
+  width: 10vw;
+  cursor: pointer;
+  position: relative;
+  left: 80%;
+  top: 5%;
+  z-index: 1;
+}
+.closer-modal img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    border-radius: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .modal {
+    width: 35vw;
+    height: 42vw;
+    left: 35%;
+    top: 5%;
+    border-radius: 2vw;
+    z-index: 5;
+  }
+  .closer-modal {
+    width: 2.5vw;
+    cursor: pointer;
+    position: relative;
+    left: 88%;
+    top: 4%;
+    z-index: 1;
+  }
+}
